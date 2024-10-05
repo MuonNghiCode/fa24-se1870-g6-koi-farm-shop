@@ -1,0 +1,89 @@
+.top-sale-products {
+  margin-top: 10px;
+  .button {
+    width: 100%;
+    text-align: center;
+
+    button {
+      background-color: #bbab6f; /* Màu nền như mẫu */
+      color: white; /* Màu chữ */
+      padding: 10px 20px; /* Khoảng cách bên trong */
+      border: none;
+      border-radius: 8px; /* Bo tròn góc */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out; /* Hiệu ứng chuyển động khi hover */
+
+      &:hover {
+        background-color: #a3945f; /* Màu nền khi hover */
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Tăng độ đổ bóng khi hover */
+      }
+
+      &:active {
+        transform: scale(0.98); /* Nhấn button tạo hiệu ứng nhấn */
+      }
+    }
+  }
+}
+.product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  align-items: center;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #eaeaea;
+    object-fit: cover;
+  }
+
+  &__details {
+    padding: 10px;
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  &__price {
+    font-size: 16px;
+    color: #bbab6f;
+    margin: 5px 0;
+  }
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.text-center {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}

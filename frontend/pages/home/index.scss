@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+.HomePage {
+  font-family: sans-serif;
+  h1,
+  h2 {
+    font-family: "Lora";
+  }
+  gap: 30px;
+}
+.product-category {
+  .koi-card {
+    position: relative;
+    display: inline-block;
+    width: 283px; /* Đặt kích thước theo đúng ảnh */
+    height: 400px;
+  }
+
+  .koi-card img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7; /* Đặt độ mờ cho ảnh */
+    transition: opacity 0.3s ease; /* Hiệu ứng chuyển tiếp khi hover */
+  }
+
+  .koi-card .koi-title {
+    position: absolute;
+    bottom: 10px; /* Đặt vị trí của chữ trên ảnh */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Nền tối phía sau chữ */
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .koi-card:hover img {
+    opacity: 0.5; /* Giảm độ mờ của ảnh khi hover */
+  }
+
+  .koi-card:hover .koi-title {
+    background-color: rgba(0, 0, 0, 0.7); /* Làm chữ rõ hơn khi hover */
+  }
+}
+.why-choose {
+  background-color: #bbab6f; /* Màu nền xám */
+  padding: 20px;
+  text-align: center;
+  color: white;
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon {
+      font-size: 24px;
+      margin-right: 10px;
+      color: yellow; /* Màu vàng cho icon */
+    }
+  }
+
+  .dots {
+    margin: 10px 0;
+    span {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: black; /* Màu xanh cho các dấu chấm */
+      border-radius: 50%;
+      margin: 0 5px;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      margin: 10px 0;
+      font-size: 18px;
+
+      strong {
+        color: yellow; /* Màu vàng cho từ đặc biệt */
+      }
+    }
+  }
+}
+.koi-expert {
+  background-color: #f1f1f1; /* Light gray background */
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  color: #333;
+  margin: 30px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+  }
+
+  .quote-author {
+    font-size: 18px;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .consult-btn {
+    display: inline-block;
+    background-color: #bbab6f; /* Blue button */
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #a3945f; /* Darker blue on hover */
+    }
+  }
+}
+.Slogan {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 15px;
+  font-style: normal;
+}
+
+.detail_slogan {
+  display: flex;
+  margin-top: 20px;
+  &__1,
+  &__2 {
+    margin-top: 20px;
+    margin-left: 200px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: bold;
+    font-size: 17px;
+    a {
+      text-decoration: none;
+      color: black;
+      transition: color 0.3s ease;
+      gap: 10px;
+
+      &:hover {
+        color: #bbab6f;
+      }
+      display: flex;
+      align-items: center; /* Align icon and text inline */
+      padding: 10px 0; /* Add spacing between links */
+      text-align: left; /* Ensure text aligns to the left */
+      text-decoration: none; /* Remove default link underline */
+    }
+  }
+}
+.product-category {
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &__cards {
+    margin-left: 200px;
+    display: flex;
+    gap: 100px;
+    /* Để các koi card có giữa nhau */
+  }
+  .koi-card {
+    width: 283px;
+  }
+}
+.banner {
+  display: flex;
+  justify-content: space-between; /* Space banners evenly */
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px; /* Add space between banners */
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .banner__2 {
+  }
+  .banner__1,
+  .banner__2,
+  .banner__3 {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    &__title {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    &__text {
+      text-align: center;
+      line-height: 2;
+    }
+  }
+
+  h2 {
+    margin-bottom: 10px;
+    margin-left: 10px; /* Add spacing below headings */
+    color: #bbab6f;
+  }
+
+  span {
+    display: block; /* Force span to take up the whole line */
+    margin-bottom: 8px; /* Add space between lines */
+  }
+}
+
+.blog-list-container {
+  width: 80%; /* Takes up 80% of the screen */ /* Centers the container */
+  text-align: left; /* Aligns the content to the left */
+  margin-top: 50px; /* Adds margin to the top and bottom */
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.blog-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+}
+
+.blog-info {
+  display: flex;
+  gap: 15px;
+}
+
+.blog-image {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.blog-card h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.blog-card p {
+  font-size: 14px;
+  color: #555;
+  flex-grow: 1;
+}
+
+.read-more-btn {
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  align-self: start;
+  transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+  background-color: #333;
+}
+
+/* Styling for the More Blogs button */
+.more-blogs-button-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.more-blogs-btn {
+  background-color: rgb(190, 190, 10);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 50%;
+}
+
+.more-blogs-btn:hover {
+  background-color: rgb(131, 131, 5);
+}

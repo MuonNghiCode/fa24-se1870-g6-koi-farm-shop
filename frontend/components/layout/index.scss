@@ -1,0 +1,19 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Chiều cao tối thiểu chiếm toàn bộ màn hình */
+}
+
+.layout__header {
+  flex-shrink: 0; /* Đảm bảo header không bị co lại */
+}
+
+.layout__footer {
+  flex-shrink: 0; /* Đảm bảo footer không bị co lại */
+}
+
+.layout__content {
+  flex-grow: 1; /* Nội dung (Outlet) chiếm hết phần không gian còn lại */
+  padding: 20px; /* Thêm khoảng cách nếu cần */
+  overflow: auto; /* Đảm bảo nội dung không làm tràn màn hình */ /* Khoảng cách bằng chiều cao của header */
+}

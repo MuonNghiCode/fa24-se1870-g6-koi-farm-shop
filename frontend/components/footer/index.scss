@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.footer {
+  background: linear-gradient(to top, #333, #999);
+  padding: 40px 0;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  font-family: "Lato";
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__1,
+  &__2,
+  &__3,
+  &__4 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+
+    h4 {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 8px;
+
+        /* Thêm hiệu ứng hover */
+        &:hover {
+          color: #bbab6f; /* Màu vàng nhạt khi hover */
+          transition: color 0.3s ease-in-out;
+        }
+      }
+    }
+
+    p {
+      margin: 8px 0;
+    }
+
+    .footer__logo {
+      width: 120px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__2,
+  &__3,
+  &__4 {
+    ul {
+      margin-bottom: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+
+      /* Thêm hiệu ứng hover cho các liên kết */
+      &:hover {
+        color: #bbab6f; /* Màu vàng nhạt khi hover */
+        transition: color 0.3s ease-in-out;
+      }
+    }
+  }
+}

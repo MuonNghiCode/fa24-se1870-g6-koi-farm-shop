@@ -1,0 +1,5 @@
+.fish-list {
+  display: flex; /* Để đảm bảo các item sẽ xuống dòng khi hết chiều ngang */
+  gap: 20px; /* Khoảng cách giữa các item */
+  justify-content: flex-start; /* Canh các item bắt đầu từ đầu hàng */
+}
